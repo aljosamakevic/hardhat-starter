@@ -1,14 +1,7 @@
 const { expect } = require("chai");
 
 describe("Simple Message Contract", function () {
-//   it("Deployment should assign the total supply of tokens to the owner", async function () {
-//     const [owner] = await ethers.getSigners();
 
-//     const hardhatToken = await ethers.deployContract("Token");
-
-//     const ownerBalance = await hardhatToken.balanceOf(owner.address);
-//     expect(await hardhatToken.totalSupply()).to.equal(ownerBalance);
-//   });
   it("Deployment with an empty string should assign a default message to the message var", async function () {
     const defaultMessage = "Hey there AD";
 
