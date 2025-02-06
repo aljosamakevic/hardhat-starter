@@ -13,6 +13,8 @@ contract SimpleMessage {
     }
 
     constructor(string memory initialMessage) {
+        owner = msg.sender;
+
         if (bytes(initialMessage).length == 0) {
             message = "Hey there AD";
         } else {
